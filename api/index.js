@@ -10,11 +10,13 @@ import multer from "multer"
 import cors from 'cors';
 import path from "path"
 
+
 const __dirname = path.resolve();
 
 const app=express()
 app.use(cors())
 const port=process.env.PORT || '8000'
+
 const DATABASE_URL=process.env.DATABASE_URL || "mongodb://localhost:27017";
 //database connection
 connectDB(DATABASE_URL);
@@ -49,6 +51,12 @@ app.use("/api/users",userRoute)
 app.use("/api/post",postRoute)
 
 app.use("/api/category",categoryRoute)
+app.use(express.static(path.join(__dirname, './build'), {}));
+// app.use('*', express.static(path.join(__dirname, '/../build')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './build', 'index.html'));
+  });
 
 app.listen(port,()=>{
     console.log(`Server listening at http://localhost:${port}`);

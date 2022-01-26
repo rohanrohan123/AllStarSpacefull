@@ -12,7 +12,7 @@ export default function Settings() {
   const [success, setSuccess] = useState(false);
 
   const { user, dispatch } = useContext(Context);
-  const PF = "http://localhost:8000/images/"
+  const PF = "http://44.202.13.47:8000/images/"
 
   const handleSubmit = async (e) => {
     e.preventDefault();
