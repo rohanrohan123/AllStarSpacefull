@@ -24,7 +24,7 @@ export default function Write() {
       data.append("file", file);
       newPost.photo = filename;
       try {
-        await axios.post("/upload", data);
+        await axios.post(`${pack.proxy}upload`, data);
       } catch (err) {}
     }
     try {
