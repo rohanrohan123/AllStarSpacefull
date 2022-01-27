@@ -2,6 +2,7 @@ import "./login.css";
 import { Context } from "../../context/context";
 import { useContext, useRef } from "react";
 import axios from "axios";
+import pack from "../../../package.json"
 export default function Login() {
   
   const userRef = useRef()
@@ -13,7 +14,7 @@ export default function Login() {
     e.preventDefault();
     dispatch({ type: "LOGIN_START" });
     try {
-      const res = await axios.post("/auth/login", {
+      const res = await axios.post(`${pack.proxy}auth/Login`, {
         username: userRef.current.value,
         password: passwordRef.current.value
 

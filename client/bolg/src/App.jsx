@@ -14,14 +14,14 @@ function App() {
     <Router>
       {/* <Topbar /> */}
       <Switch>
-        <Route exact path="/">
+        {/* <Route exact path="/">
           <Homepage />
-        </Route>
+        </Route> */}
         {/* <Route path="/register" ><Register/> </Route> */}
         {/* {user ? <Homepage /> : <Register />} */}
-        <Route exact path="/allstar"> {user ? <Homepage /> : <Login />} </Route>
+        <Route exact path="/"> {user ? <Homepage /> : <Login />} </Route>
         <Route exact path="/write">{user ? <Write /> : <Login />}</Route>
-        <Route exact path="/settings">{user ? <Settings /> : <Login/>}</Route>
+        {/* <Route exact path="/settings">{user ? <Settings /> : <Login/>}</Route> */}
         <Route exact path="/post/:postId">
         <Single />
         </Route>

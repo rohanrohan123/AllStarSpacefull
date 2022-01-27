@@ -1,19 +1,19 @@
-import axios from 'axios';
-import { useState, useEffect } from 'react'
-import { Link } from "react-router-dom";
+//import axios from 'axios';
+//import { useState, useEffect } from 'react'
+//import { Link } from "react-router-dom";
 import "./sidebar.css";
 
 export default function Sidebar() {
-  const [cats, setCats] = useState([])
+  // const [cats, setCats] = useState([])
 
-  useEffect(() => {
-    const getCats = async () => 
-    {
-      const res = await axios.get("/category")
-      setCats(res.data)
-    }
-    getCats()
-  })
+  // useEffect(() => {
+  //   const getCats = async () => 
+  //   {
+  //     const res = await axios.get("/category")
+  //     setCats(res.data)
+  //   }
+  //   getCats()
+  // })
 
 
 

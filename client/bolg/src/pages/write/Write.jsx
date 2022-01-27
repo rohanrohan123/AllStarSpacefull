@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import "./write.css";
 import axios from "axios";
 import { Context } from "../../context/context";
+import pack from "../../../package.json";
 import Topbar from "../../components/topbar/Topbar";
 export default function Write() {
   const [title, setTitle] = useState("");
@@ -27,7 +28,7 @@ export default function Write() {
       } catch (err) {}
     }
     try {
-      const res = await axios.post("/post", newPost);
+      const res = await axios.post(`${pack.proxy}post`, newPost);
       window.location.replace("/post/" + res.data._id);
     } catch (err) {}
   };

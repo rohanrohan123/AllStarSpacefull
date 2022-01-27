@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../../context/context";
 import "./singlePost.css";
 // import Topbar from "../topbar/Topbar";
-
+import pack from "../../../package.json"
 export default function SinglePost() {
   const location = useLocation();
   const path = location.pathname.split("/")[2];
@@ -18,7 +18,7 @@ export default function SinglePost() {
 
   useEffect(() => {
     const getPost = async () => {
-      const res = await axios.get("/post/" + path);
+      const res = await axios.get(`${pack.proxy}post/` + path);
       setPost(res.data);
       setTitle(res.data.title);
       setDesc(res.data.desc);
@@ -28,7 +28,7 @@ export default function SinglePost() {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`/post/${post._id}`, {
+      await axios.delete(`${pack.proxy}post/${post._id}`, {
         data: { username: user.username },
       });
       window.location.replace("/");
@@ -37,7 +37,7 @@ export default function SinglePost() {
 
   const handleUpdate = async () => {
     try {
-      await axios.put(`/post/${post._id}`, {
+      await axios.put(`${pack.proxy}post/${post._id}`, {
         username: user.username,
         title,
         desc,
