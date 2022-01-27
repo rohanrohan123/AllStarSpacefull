@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.1a9f8461.css",
-    "main.js": "/static/js/main.abe8d239.js",
+    "main.js": "/static/js/main.08789d8f.js",
     "static/js/787.6c4fb6cf.chunk.js": "/static/js/787.6c4fb6cf.chunk.js",
-    "static/media/Blog_Jens_Img.png": "/static/media/Blog_Jens_Img.dd9213efe02f1a78ccb5.png",
     "static/media/tsImg4.png": "/static/media/tsImg4.96f5246d24325def63a6.png",
     "static/media/tsImg3.png": "/static/media/tsImg3.43ca201905e56a0e55e1.png",
     "static/media/tsImg6.png": "/static/media/tsImg6.55faad22116b7596e7f1.png",
     "static/media/tsImg1.png": "/static/media/tsImg1.2aa87753ca674826e6ee.png",
     "static/media/tsImg5.png": "/static/media/tsImg5.44fec2bf6b46a8da88bc.png",
+    "static/media/Blog_Jens_Img.png": "/static/media/Blog_Jens_Img.9d17924393ba5512ba2f.png",
     "static/media/Mandali-Regular.ttf": "/static/media/Mandali-Regular.8e5ea45ab2cfdcb411e2.ttf",
     "static/media/tsImg2.png": "/static/media/tsImg2.e663c948f194ba51fe17.png",
     "static/media/aboutJensImage.jpg": "/static/media/aboutJensImage.a31bb44e9c3525295ee9.jpg",
@@ -35,11 +35,11 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "main.1a9f8461.css.map": "/static/css/main.1a9f8461.css.map",
-    "main.abe8d239.js.map": "/static/js/main.abe8d239.js.map",
+    "main.08789d8f.js.map": "/static/js/main.08789d8f.js.map",
     "787.6c4fb6cf.chunk.js.map": "/static/js/787.6c4fb6cf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1a9f8461.css",
-    "static/js/main.abe8d239.js"
+    "static/js/main.08789d8f.js"
   ]
 }
