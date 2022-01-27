@@ -8,7 +8,10 @@
   display: flex;
   flex-direction: column;
 }
-
+.singlepostimg{
+  height: 600px;
+  width: 100%;
+}
 .singlePostImg {
   width: 100%;
   height: 300px;
