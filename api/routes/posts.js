@@ -90,7 +90,7 @@ router.get("/", async (req, res) => {
                 }
             })
         } else {
-            posts = await Post.find().sort({createdAt:1});
+            posts = await Post.find();
         }
         res.status(200).json(posts)
 
