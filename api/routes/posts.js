@@ -1,5 +1,5 @@
 import express from 'express';
-
+import User from '../models/User.js';
 
 import Post from '../models/Post.js';
 const router = express.Router();
@@ -90,7 +90,7 @@ router.get("/", async (req, res) => {
                 }
             })
         } else {
-            posts = await Post.find().sort({"createdAt":1});
+            posts = await Post.find().sort({createdAt:1});
         }
         res.status(200).json(posts)
 
